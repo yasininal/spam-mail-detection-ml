@@ -321,3 +321,22 @@ else:
 
 
 '''
+
+
+'''
+
+# Modelin Ve Vectorizer'in kaydedilmesi
+import pickle          # Kaydetmek için gereken kütüphanemiz
+
+# 1. Modeli kaydet
+with open('spam_model.pkl', 'wb') as file:
+    pickle.dump(model, file)
+
+# 2. Vektörleştiriciyi (TfidfVectorizer) kaydet
+# Bunu kaydetmek zorundayız çünkü yeni gelen metni de aynı kurallarla (ngram, stop words) sayıya çevirmeliyiz.
+with open('vectorizer.pkl', 'wb') as file:
+    pickle.dump(feature_extraction, file)
+
+print("Model ve Vektörleştirici başarıyla kaydedildi!")
+
+'''
