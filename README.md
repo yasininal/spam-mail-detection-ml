@@ -23,8 +23,11 @@ Dosya düzeni aşağıdaki gibidir:
 SpamDedektoru/
 │
 ├── app.py                # Flask sunucu dosyası (Backend)
+│
 ├── spam_mail.py          # Spam mail kodu
+│
 ├── mail_data.csv         # Veri seti
+│
 ├── spam_model.pkl        # Eğitilmiş AI Modeli
 ├── vectorizer.pkl        # TF-IDF Kelime Dönüştürücü
 │
