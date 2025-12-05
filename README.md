@@ -1,4 +1,3 @@
-
 # 📧 Spam Mail Tespit Uygulaması (Spam Detection Web App)
 
 Bu proje, Makine Öğrenmesi (Logistic Regression) ve Doğal Dil İşleme (NLP) tekniklerini kullanarak, girilen e-posta metninin **Spam (Gereksiz/Zararlı)** mı yoksa **Ham (Güvenli/Normal)** mı olduğunu tespit eden web tabanlı bir uygulamadır.
@@ -24,6 +23,8 @@ Dosya düzeni aşağıdaki gibidir:
 SpamDedektoru/
 │
 ├── app.py                # Flask sunucu dosyası (Backend)
+├── spam_mail.py          # Spam mail kodu
+├── mail_data.csv         # Veri seti
 ├── spam_model.pkl        # Eğitilmiş AI Modeli
 ├── vectorizer.pkl        # TF-IDF Kelime Dönüştürücü
 │
